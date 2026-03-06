@@ -1,0 +1,22 @@
+# variables for fetch-big-json-with-all-work.sh
+WORKFOLDER="/fleet-deployments-reports/reports/automatization-ent"
+ENT="ent"
+SERVER="control.example.com"
+CONTAINERNAME="DeploymentReports"
+CONTAINERTAG="zededa/zcli:9.11.0"
+AUTHEMAIL="user-ro@example.com"
+TOKENFILE="token.txt"
+WEEKCOMPAREDAY="Fri"
+OUTFILEMINSIZE=10000
+EXTRACOLUMNS="NO"
+#EXTRACOLUMNS="YES"
+TO="recepient1@example.com"
+CC="recepient2@example.com"
+BCC="recepient3@example.com"
+FROM="robot@example.com"
+ROBOTNAME="Reports Robot"
+SMTPSERVER="smtp.example.com"
+SMTPUSER="mailsenderuser"
+SMTPPASS="mailsenderpassword123456"
+MESSIDDOMAIN="example.com"
+SMTPPORT=587
