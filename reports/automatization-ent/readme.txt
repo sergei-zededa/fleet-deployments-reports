@@ -4,7 +4,7 @@ The set of scripts that can be run daily to track the fleet deployment process.
 The script needs Ubuntu Linux, python and docker.
 
 The main script is fetch-big-json-with-all-work9.sh,
-it invokes the state of the fleet using zcli docker container and then analyzes the fetched data.
+it fetches the state of the fleet using zcli docker container and then analyzes the fetched data.
 For that, there are several python sub-scripts are invoked from the main script:
 gen-report19.py - creates a CSV-table with deployed edge-nodes and some of their parameters and makes a conclusing about devices' readiness (marking it as Green/Yellow/Orange/Red),
 gen-report-excel10.py - creates an excel-variant of the table,
