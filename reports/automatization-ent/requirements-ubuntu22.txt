@@ -1,0 +1,38 @@
+requirements for running on Ubuntu-22.04:
+
+
+========================
+mailsend-go
+
+git clone https://github.com/muquit/mailsend-go
+or wget https://github.com/muquit/mailsend-go/releases/download/v1.0.11-b2/mailsend-go-v1.0.11-b2-linux-amd64.d.tar.gz
+========================
+
+
+
+========================
+required python3 modules:
+--
+gen-report.py:
+pip3 install datetime
+pip3 install configobj
+--
+gen-report-excel.py:
+pip3 install openpyxl
+pip3 install pandas
+--
+analyze-coutries.py:
+pip3 install pandas
+pip3 install pycountry
+--
+========================
+
+
+========================
+requred sub-folders:
+
+mkdir -p zipreports
+mkdir -p csvreports
+mkdir -p jsons
+mkdir -p apps
+========================
