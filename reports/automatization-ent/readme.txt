@@ -30,4 +30,5 @@ Orange -  online, not at factory, with less than 2 deployed app-instances,
 Red - offline, not onboarded, and other nonfunctional states.
 
 The script can be run regularly by cron from the working directory.
+Both sh-files have to be executable.
 
