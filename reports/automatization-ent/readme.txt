@@ -9,7 +9,8 @@ For that, there are several python sub-scripts are invoked from the main script:
 gen-report19.py - creates a CSV-table with deployed edge-nodes and some of their parameters and makes a conclusing about devices' readiness (marking it as Green/Yellow/Orange/Red),
 gen-report-excel10.py - creates an excel-variant of the table,
 analyze-countries7.py - analyzes the distribution over the World,
-compare-csv9.py - compares the CSV-tables between today and yesterday, and 1 week ago, and 1 month ago, and 1 quarter ago.
+compare-csv9.py - compares the CSV-tables between two dates and create delta-reports: 
+comarision with today and yesterday, and 1 week ago, and 1 month ago, and 1 quarter ago.
 
 Produced files are sent via smtp to recipients' email addresses.
 
@@ -29,6 +30,10 @@ Yellow -  online, at factory (defined by the list of CIDRs in the file fabric-
 Orange -  online, not at factory, with less than 2 deployed app-instances,
 Red - offline, not onboarded, and other nonfunctional states.
 
-The script can be run regularly by cron from the working directory.
 Both sh-files have to be executable.
+The main script fetch-big-json-with-all-work9.sh should be started from the working directory.
+
+It makes sense to run the script daily by cron to collect all the delta rports.
+For example the script like run-reports-cron.sh.example can be invoked from crod with cron-line like this:
+00  19  *  *  * root  /fleet-deployments-reports/reports/automatization-ent/run-reports-cron.sh
 

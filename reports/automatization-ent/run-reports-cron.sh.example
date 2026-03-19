@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /fleet-deployments-reports/reports/automatization-ent
+/fleet-deployments-reports/reports/automatization-ent/fetch-big-json-with-all-work9.sh 2>&1 | tee -a /fleet-deployments-reports/reports/automatization-ent/fetch-big-json.log
