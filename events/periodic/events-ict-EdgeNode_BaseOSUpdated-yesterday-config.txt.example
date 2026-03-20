@@ -1,0 +1,14 @@
+token_file        = token-ict.txt
+docker_image      = zededa/zcli:14.3.0
+docker_container  = zcli143events
+voldir            = d
+envs              = ZENTERPRISE=ICT
+zedcloudserver    = zedcontrol.example.com
+authemail         = zcliuser@example.com
+collected_file    = events-ict/events-ict-EdgeNode_BaseOSUpdated-yesterday.txt
+AddDateToFileName = True
+eventstemplate    = --filter-resource=EdgeNode --filter-event-type="EdgeNode_BaseOS Updated"
+YesterdayOnly     = True
+SortNeeded        = True
+ZipNeeded         = False
+

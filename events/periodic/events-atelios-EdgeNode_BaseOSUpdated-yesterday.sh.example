@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./eventsget2.py events-ict-EdgeNode_BaseOSUpdated-yesterday-config.txt

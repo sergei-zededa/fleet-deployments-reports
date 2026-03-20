@@ -1,0 +1,13 @@
+token_file        = token-ict.txt
+docker_image      = zededa/zcli:14.3.0
+docker_container  = zcli143events
+voldir            = d
+envs              = ZENTERPRISE=ICT
+zedcloudserver    = zedcontrol.example.com
+authemail         = zcliuser@example.com
+collected_file    = events-ict/events-ict-AppInst_Created-yesterday.txt
+AddDateToFileName = True
+eventstemplate    = --filter-resource=EdgeAppInstance --filter-event-type=EdgeAppInstance_Created
+YesterdayOnly     = True
+SortNeeded        = True
+ZipNeeded         = False
