@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./eventsget3.py events-ict-EdgeAppInstance_Created-yesterday-config.txt

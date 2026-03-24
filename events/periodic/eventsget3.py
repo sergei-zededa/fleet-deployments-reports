@@ -68,10 +68,17 @@ def start_container1(image, container, voldir, envvars):
 
 
 def start_container2(image, container, voldir, envvars):
+    shcommand = f"docker stop {container}"
+    try:
+        result = subprocess.run(shcommand, shell=True, capture_output=True, text=True, check=True)
+        print(f"Docker container '{container}' stopped preventivly.")
+        #return result.stdout
+    except subprocess.CalledProcessError as e:
+        estderr=e.stderr
     shcommand = f"docker run -id --rm -v {voldir}:/in --name {container} -e {envvars} {image}"
     try:
         result = subprocess.run(shcommand, shell=True, capture_output=True, text=True, check=True)
-        #print(f"Docker container '{container}' started successfully.")
+        print(f"Docker container '{container}' started successfully.")
         #return result.stdout
     except subprocess.CalledProcessError as e:
         print(f"Command failed with return code {e.returncode}: {e.stderr}")
