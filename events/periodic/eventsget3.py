@@ -186,7 +186,7 @@ if AddDateToFileName:
 
 # get current dir:
 #vol_folder = os.getcwd()
-#vol_folder = "/root/vw/test/events/d"
+#vol_folder = "/my-test/events/d"
 vol_folder = os.getcwd()+"/d"
 #vol_folder = "./d"
 #print(vol_folder)
