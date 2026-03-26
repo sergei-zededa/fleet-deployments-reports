@@ -2,6 +2,7 @@
 **/token.txt
 **/token
 **/*.log
+**/*config
 **/*config.sh
 **/*config.txt
 **/env_vars.yaml
