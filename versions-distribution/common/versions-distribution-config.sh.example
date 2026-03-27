@@ -1,0 +1,13 @@
+# variables for versions-distribution-4.sh
+producedfolder="produced"
+SENDDAY="Fri"
+TO="recepient1@example.com"
+CC="recepient2@example.com,recepient3@example.com"
+BCC="recepient4@example.com"
+FROM="reportrobot@example.com"
+ROBOTNAME="Reports Robot"
+SMTPSERVER="smtp.example.com"
+SMTPUSER="smtpuser"
+SMTPPASS="smtppassword1234567890"
+MESSIDDOMAIN="example.com"
+SMTPPORT=587
