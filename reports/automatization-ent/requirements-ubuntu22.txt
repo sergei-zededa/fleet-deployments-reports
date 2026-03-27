@@ -9,6 +9,11 @@ or wget https://github.com/muquit/mailsend-go/releases/download/v1.0.11-b2/mails
 ========================
 
 
+========================
+zip
+(apt install zip)
+========================
+
 
 ========================
 required python3 modules:
